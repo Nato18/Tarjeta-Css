@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  font-family: "Red Hat Display";
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e0e8ff;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.bgImg-mobile {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.bgImg {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.contenedor {
+  max-width: 110rem;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.cuadro {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: max-content;
+  width: calc(100% - 2rem);
+  background-color: white;
+  width: 30rem;
+  border-radius: 2rem;
+}
+
+.cuadro img {
+  width: 30rem;
+  object-fit: cover;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.titulo {
+  text-align: center;
+  color: #1f2f56;
+
+  font-weight: 900;
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
+
+.cuerpo {
+  display: grid;
+  width: 30rem; /*24*/
+  justify-content: center;
+  gap: 2rem;
+}
+
+.texto {
+  width: 24rem; /*24*/
+  text-align: center;
+  margin: 1rem;
+  color: #7280a7;
+
+  margin: 0;
+}
+
+.texto h3 {
+  margin: 0rem;
+}
+
+.plan {
+  margin: 0;
+  padding: 0rem 2rem 0rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 0rem;
+  background-color: #f5f7ff; /* #f5f7ff*/
+  border-radius: 1rem;
+  align-items: center;
+}
+
+.plan img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.plan h3 {
+  color: #1f2f56;
+
+  line-height: 2rem;
+}
+
+.plan span {
+  color: #7280a7;
+}
+.plan a {
+  color: hsl(245, 75%, 52%);
+  font-weight: 900;
+}
+
+.boton {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+
+  font-weight: 500;
+  text-decoration: none;
+}
+.boton:hover {
+  cursor: pointer;
+}
+
+.cancel {
+  text-decoration: none;
+  color: #1f2f56;
+  font-weight: 700;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+.cancel:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 576px) {
+	.bgImg {
+		display: block;
+	}
+
+	.bgImg-mobile {
+		display: none;
+	}
+}
